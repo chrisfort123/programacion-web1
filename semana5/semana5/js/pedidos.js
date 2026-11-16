@@ -70,7 +70,7 @@ document.querySelector('.catalogo').addEventListener('click', (evento) => {
   const boton = evento.target.closest('.btn-anadir');
   if (!boton) return;
   const producto = boton.closest('.producto');
-  agregar(producto.dataset.producto, Number(producto.dataset.precio));
+   agregar(producto.dataset.nombre, Number(producto.dataset.precio));
 });
  
 // Delegación: un solo oyente para todos los botones "Quitar"
